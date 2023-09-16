@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from '../../components/Navbar'
 
 export default function Home() {
   return (
@@ -14,110 +11,354 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main>
+        <header className='bg-primary w-screen h-screen'>
+          <Navbar />
+          <div className="flex px-10">
+            <div className="grid grid-cols-2 gap-5 h-[calc(100vh-90px)]">
+              <div className="self-center">
+                <h1 className="text-5xl font-bold text-white ">Bangun dan Wujudkan Cita Bersama EDUFREE</h1>
+                <p className='text-white  mt-10'>
+                  EDUFREE adalah sebuah layanan kursus dan pelatihan gratis secara online
+                  yang bertujuan untuk membantu kamu meraih cita di bidang teknologi.
+                </p>
+                <div className="flex">
+                  <button className='bg-secondary px-12 py-4 mt-12 text-primary rounded'>Lihat Kursus</button>
+                  <button className='bg-transparent px-12 py-4 mt-12 text-white'>Lihat Alur Belajar</button>
+                </div>
+              </div>
+              <div className=" flex justify-center">
+                <Image src="/assets/images/hero.svg" width={577} height={370.97} alt="Hero Image" />
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+          <section className="absolute bg-gray-200 py-11 w-full mt-[-20px] px-10">
+            <div className="grid grid-cols-8 content-center items-center">
+              <div>
+                <h1 className="text-2xl font-bold text-primary">21.000+</h1>
+                <p className="text-gray-500">Siswa Terdaftar</p>
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold text-primary">100+</h1>
+                <p className="text-gray-500">Instruktur Ahli</p>
+              </div>
+              <div>
+                <h1 className="text-2xl font-bold text-primary">150+</h1>
+                <p className="text-gray-500">Kursus Gratis</p>
+              </div>
+              <div>
+                <Image src='/assets/images/lorem-icon.svg' width={120} height={20} alt='Lorem Icon' />
+              </div>
+              <div>
+                <Image src='/assets/images/ditlance.svg' width={120} height={20} alt='Lorem Icon' />
+              </div>
+              <div>
+                <Image src='/assets/images/owthest.svg' width={120} height={20} alt='Lorem Icon' />
+              </div>
+              <div>
+                <Image src='/assets/images/neovasi.svg' width={120} height={20} alt='Lorem Icon' />
+              </div>
+              <div>
+                <Image src='/assets/images/onago.svg' width={120} height={20} alt='Lorem Icon' />
+              </div>
+            </div>
+          </section>
+        </header>
+
+        <section className='mt-56 mb-10 px-10'>
+          <div className="text-center w-full flex justify-center">
+            <h1 className='text-3xl w-1/3'>Keuntungan Bergabung Dengan  E-Learning EDUFREE</h1>
           </div>
-        </div>
+          <div className='grid grid-cols-3 gap-7 mt-16'>
+            <div className='bg-[#F4F6FC] p-10'>
+              <svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1_295" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x={0} y={0} width={40} height={40}>
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                </mask>
+                <g mask="url(#mask0_1_295)">
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                  <rect x={-31} y={14} width={40} height={40} rx={5} fill="#FCD980" />
+                </g>
+                <path d="M19.7392 18.58V15.4H25.2792V30H21.7192V18.58H19.7392Z" fill="white" />
+              </svg>
+              <h1 className='text-2xl mb-3 mt-2'>Kursus Gratis</h1>
+              <p>
+                Kami menyediakan beberapa kursus gratis untuk menunjang ketersediaan pendidikan untuk masyarakat kurang mampu
+              </p>
+            </div>
+            <div className='bg-[#F4F6FC] p-10'>
+              <svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1_275" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x={0} y={0} width={40} height={40}>
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                </mask>
+                <g mask="url(#mask0_1_275)">
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                  <rect x={-31} y={14} width={40} height={40} rx={5} fill="#FCD980" />
+                </g>
+                <path d="M19.1392 25.84C20.4192 24.7733 21.4392 23.8867 22.1992 23.18C22.9592 22.46 23.5926 21.7133 24.0992 20.94C24.6059 20.1667 24.8592 19.4067 24.8592 18.66C24.8592 17.98 24.6992 17.4467 24.3792 17.06C24.0592 16.6733 23.5659 16.48 22.8992 16.48C22.2326 16.48 21.7192 16.7067 21.3592 17.16C20.9992 17.6 20.8126 18.2067 20.7992 18.98H18.0792C18.1326 17.38 18.6059 16.1667 19.4992 15.34C20.4059 14.5133 21.5526 14.1 22.9392 14.1C24.4592 14.1 25.6259 14.5067 26.4392 15.32C27.2526 16.12 27.6592 17.18 27.6592 18.5C27.6592 19.54 27.3792 20.5333 26.8192 21.48C26.2592 22.4267 25.6192 23.2533 24.8992 23.96C24.1792 24.6533 23.2392 25.4933 22.0792 26.48H27.9792V28.8H18.0992V26.72L19.1392 25.84Z" fill="white" />
+              </svg>
+              <h1 className='text-2xl mb-3 mt-2'>Akses Selamanya</h1>
+              <p>Semua kursus yang telah kamu daftar bisa diakses selamanya sehingga belajar kamu lebih nyaman dan tidak terburu-buru
+              </p>
+            </div>
+            <div className='bg-[#F4F6FC] p-10'>
+              <svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1_254" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x={0} y={0} width={40} height={40}>
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                </mask>
+                <g mask="url(#mask0_1_254)">
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                  <rect x={-31} y={14} width={40} height={40} rx={5} fill="#FCD980" />
+                </g>
+                <path d="M18.2992 18.26C18.3659 16.9267 18.8326 15.9 19.6992 15.18C20.5792 14.4467 21.7326 14.08 23.1592 14.08C24.1326 14.08 24.9659 14.2533 25.6592 14.6C26.3526 14.9333 26.8726 15.3933 27.2192 15.98C27.5792 16.5533 27.7592 17.2067 27.7592 17.94C27.7592 18.78 27.5392 19.4933 27.0992 20.08C26.6726 20.6533 26.1592 21.04 25.5592 21.24V21.32C26.3326 21.56 26.9326 21.9867 27.3592 22.6C27.7992 23.2133 28.0192 24 28.0192 24.96C28.0192 25.76 27.8326 26.4733 27.4592 27.1C27.0992 27.7267 26.5592 28.22 25.8392 28.58C25.1326 28.9267 24.2792 29.1 23.2792 29.1C21.7726 29.1 20.5459 28.72 19.5992 27.96C18.6526 27.2 18.1526 26.08 18.0992 24.6H20.8192C20.8459 25.2533 21.0659 25.78 21.4792 26.18C21.9059 26.5667 22.4859 26.76 23.2192 26.76C23.8992 26.76 24.4192 26.5733 24.7792 26.2C25.1526 25.8133 25.3392 25.32 25.3392 24.72C25.3392 23.92 25.0859 23.3467 24.5792 23C24.0726 22.6533 23.2859 22.48 22.2192 22.48H21.6392V20.18H22.2192C24.1126 20.18 25.0592 19.5467 25.0592 18.28C25.0592 17.7067 24.8859 17.26 24.5392 16.94C24.2059 16.62 23.7192 16.46 23.0792 16.46C22.4526 16.46 21.9659 16.6333 21.6192 16.98C21.2859 17.3133 21.0926 17.74 21.0392 18.26H18.2992Z" fill="white" />
+              </svg>
+              <h1 className='text-2xl mb-3 mt-2'>Grup Konsultasi</h1>
+              <p>
+                Terdapat grup konsultasi yang berguna jika kamu ingin menanyakan suatu pertanyaan  dan kamu juga bisa mebuka diskusi baru
+              </p>
+            </div>
+            <div className='bg-[#F4F6FC] p-10'>
+              <svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1_305" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x={0} y={0} width={40} height={40}>
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                </mask>
+                <g mask="url(#mask0_1_305)">
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                  <rect x={-31} y={14} width={40} height={40} rx={5} fill="#FCD980" />
+                </g>
+                <path d="M17.1392 27.16V24.96L23.6792 15.6H26.9392V24.72H28.6992V27.16H26.9392V30H24.1392V27.16H17.1392ZM24.3192 18.6L20.2192 24.72H24.3192V18.6Z" fill="white" />
+              </svg>
+              <h1 className='text-2xl mb-3 mt-2'>Sertifikat dan Portofolio</h1>
+              <p>
+                Setelah menyelesaikan kursus kamu akan mendapatkan sertifikat serta portofolio dari project kursus yang telah diselesaikan
+              </p>
+            </div>
+            <div className='bg-[#F4F6FC] p-10'>
+              <svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1_285" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x={0} y={0} width={40} height={40}>
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                </mask>
+                <g mask="url(#mask0_1_285)">
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                  <rect x={-31} y={14} width={40} height={40} rx={5} fill="#FCD980" />
+                </g>
+                <path d="M28.0592 16.84H21.5792V20.26C21.8592 19.9133 22.2592 19.6333 22.7792 19.42C23.2992 19.1933 23.8526 19.08 24.4392 19.08C25.5059 19.08 26.3792 19.3133 27.0592 19.78C27.7392 20.2467 28.2326 20.8467 28.5392 21.58C28.8459 22.3 28.9992 23.0733 28.9992 23.9C28.9992 25.4333 28.5592 26.6667 27.6792 27.6C26.8126 28.5333 25.5726 29 23.9592 29C22.4392 29 21.2259 28.62 20.3192 27.86C19.4126 27.1 18.8992 26.1067 18.7792 24.88H21.4992C21.6192 25.4133 21.8859 25.84 22.2992 26.16C22.7259 26.48 23.2659 26.64 23.9192 26.64C24.7059 26.64 25.2992 26.3933 25.6992 25.9C26.0992 25.4067 26.2992 24.7533 26.2992 23.94C26.2992 23.1133 26.0926 22.4867 25.6792 22.06C25.2792 21.62 24.6859 21.4 23.8992 21.4C23.3392 21.4 22.8726 21.54 22.4992 21.82C22.1259 22.1 21.8592 22.4733 21.6992 22.94H19.0192V14.38H28.0592V16.84Z" fill="white" />
+              </svg>
+              <h1 className='text-2xl mb-3 mt-2'>Belajar Lebih Terarah</h1>
+              <p>
+                Kursus menyediakan kursus dari level dasar hingga expert sehingga semua  bisa belajar dengan  layanan yang kami sediakan
+              </p>
+            </div>
+            <div className='bg-[#F4F6FC] p-10'>
+              <svg width={40} height={40} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1_265" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x={0} y={0} width={40} height={40}>
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                </mask>
+                <g mask="url(#mask0_1_265)">
+                  <rect width={40} height={40} rx={5} fill="#2405F2" />
+                  <rect x={-31} y={14} width={40} height={40} rx={5} fill="#FCD980" />
+                </g>
+                <path d="M25.8192 18.06C25.6859 17.5 25.4526 17.08 25.1192 16.8C24.7992 16.52 24.3326 16.38 23.7192 16.38C22.7992 16.38 22.1192 16.7533 21.6792 17.5C21.2526 18.2333 21.0326 19.4333 21.0192 21.1C21.3392 20.5667 21.8059 20.1533 22.4192 19.86C23.0326 19.5533 23.6992 19.4 24.4192 19.4C25.2859 19.4 26.0526 19.5867 26.7192 19.96C27.3859 20.3333 27.9059 20.88 28.2792 21.6C28.6526 22.3067 28.8392 23.16 28.8392 24.16C28.8392 25.1067 28.6459 25.9533 28.2592 26.7C27.8859 27.4333 27.3326 28.0067 26.5992 28.42C25.8659 28.8333 24.9926 29.04 23.9792 29.04C22.5926 29.04 21.4992 28.7333 20.6992 28.12C19.9126 27.5067 19.3592 26.6533 19.0392 25.56C18.7326 24.4533 18.5792 23.0933 18.5792 21.48C18.5792 19.04 18.9992 17.2 19.8392 15.96C20.6792 14.7067 22.0059 14.08 23.8192 14.08C25.2192 14.08 26.3059 14.46 27.0792 15.22C27.8526 15.98 28.2992 16.9267 28.4192 18.06H25.8192ZM23.7792 21.7C23.0726 21.7 22.4792 21.9067 21.9992 22.32C21.5192 22.7333 21.2792 23.3333 21.2792 24.12C21.2792 24.9067 21.4992 25.5267 21.9392 25.98C22.3926 26.4333 23.0259 26.66 23.8392 26.66C24.5592 26.66 25.1259 26.44 25.5392 26C25.9659 25.56 26.1792 24.9667 26.1792 24.22C26.1792 23.4467 25.9726 22.8333 25.5592 22.38C25.1592 21.9267 24.5659 21.7 23.7792 21.7Z" fill="white" />
+              </svg>
+              <h1 className='text-2xl mb-3 mt-2'>Instruktur Berpengalaman</h1>
+              <p>
+                Kami mempunyai instruktur berpengalaman yang diambil dari dunia industri yang tak diragukan lagi pengalamannya
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+        <section className='px-10 mb-10 mt-32'>
+          <div className="grid grid-cols-2 gap-10">
+            <div className='self-center'>
+              <span className='text-gray-500 text-xl'>Tentang Kami</span>
+              <h1 className='text-4xl w-10/12 mt-3'>
+                EDUFREE Layanan E-Learning Gratis Untuk Membantu Kamu Bertumbuh
+              </h1>
+              <p className='text-gray-700 mt-5'>
+                Edufree diharapkann bisa menjadi layanan yang bermanfaat bagi kedepanya dalam bidang pendidikan
+              </p>
+            </div>
+            <div className=' flex justify-center'>
+              <Image src='/assets/images/unsplash_vbxyFxlgpjM.png' width={575} height={398} alt='Ilustration work' />
+            </div>
+          </div>
+        </section>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
+        <section className='px-10 mb-10 mt-32'>
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className='text-primary text-4xl w-3/4 font-bold'>
+                Rekomendasi Kursus Untuk Kamu
+              </h1>
+            </div>
+            <div className=''>
+              <select className='bg-transparent px-5 py-3 focus:border-0'>
+                <option value="">Kategori</option>
+              </select>
+              <button className='bg-secondary px-7 py-3 text-primary ml-9'>Lihat Semua</button>
+            </div>
+          </div>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
+          <div className="grid grid-cols-3 mt-10 gap-16">
+            <div>
+              <div className='bg-white'>
+                <Image src='/assets/images/unsplash_m_HRfLhgABo.png' width={500} height={200} alt='Ilustration work' />
+                <div>
+                  <h1 className='text-primary text-xl font-semibold mt-3'>Belajar HTML</h1>
+                  <p className='font-light mt-2'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                  </p>
+                  <div className='flex justify-between mt-4'>
+                    <div className='flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      <span className='ml-2 text-gray-700 font-light'>2 Jam</span>
+                    </div>
+                    <div className='flex'>
+                      <svg width="18" height="18" viewBox="0 0 30.72 30.72" className="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M15.36 1.92a13.44 13.44 0 1 1 0 26.88 13.44 13.44 0 0 1 0 -26.88zm0 24.96a11.52 11.52 0 0 0 0 -23.04 11.52 11.52 0 0 0 0 23.04zm-1.44 -7.428L20.058 15.36 13.92 11.268v8.183zm0.319 -10.28 7.484 4.99a1.44 1.44 0 0 1 0 2.396L14.239 21.548A1.44 1.44 0 0 1 12 20.35V10.368a1.44 1.44 0 0 1 2.239 -1.198z" /></svg>
+                      <span className='ml-2 text-gray-700 font-light'>20 Video</span>
+                    </div>
+                    <div className='flex'>
+                      <svg fill="#000000" width="18px" height="18px" viewBox="-0.045 -0.034 0.54 0.54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" className="jam jam-users"><path d="M0.08 0.249a0.022 0.022 0 1 1 0.016 0.042A0.081 0.081 0 0 0 0.045 0.366V0.405a0.022 0.022 0 0 0 0.022 0.022h0.18a0.022 0.022 0 0 0 0.022 -0.022v-0.037a0.082 0.082 0 0 0 -0.053 -0.077 0.022 0.022 0 1 1 0.016 -0.042A0.127 0.127 0 0 1 0.315 0.368V0.405a0.068 0.068 0 0 1 -0.068 0.068H0.068a0.068 0.068 0 0 1 -0.068 -0.068v-0.039a0.126 0.126 0 0 1 0.08 -0.117zM0.158 0.022a0.09 0.09 0 0 1 0.09 0.09v0.045a0.09 0.09 0 1 1 -0.18 0V0.112a0.09 0.09 0 0 1 0.09 -0.09zm0 0.045a0.045 0.045 0 0 0 -0.045 0.045v0.045a0.045 0.045 0 1 0 0.09 0V0.112a0.045 0.045 0 0 0 -0.045 -0.045zm0.202 0.383a0.022 0.022 0 0 1 0 -0.045h0.022a0.022 0.022 0 0 0 0.022 -0.022v-0.041a0.076 0.076 0 0 0 -0.052 -0.072 0.022 0.022 0 1 1 0.014 -0.043A0.121 0.121 0 0 1 0.45 0.341V0.383a0.068 0.068 0 0 1 -0.068 0.068h-0.022zM0.292 0.045a0.022 0.022 0 0 1 0 -0.045 0.09 0.09 0 0 1 0.09 0.09v0.045a0.09 0.09 0 0 1 -0.09 0.09 0.022 0.022 0 0 1 0 -0.045 0.045 0.045 0 0 0 0.045 -0.045V0.09a0.045 0.045 0 0 0 -0.045 -0.045z" /></svg>
+                      <span className='ml-2 text-gray-700 font-light'>1.930 Siswa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className='bg-white'>
+                <Image src='/assets/images/pexels-olya-kobruseva-5561923 1.png' width={500} height={200} alt='Ilustration work' />
+                <div>
+                  <h1 className='text-primary text-xl font-semibold mt-3'>Belajar HTML</h1>
+                  <p className='font-light mt-2'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                  </p>
+                  <div className='flex justify-between mt-4'>
+                    <div className='flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      <span className='ml-2 text-gray-700 font-light'>2 Jam</span>
+                    </div>
+                    <div className='flex'>
+                      <svg width="18" height="18" viewBox="0 0 30.72 30.72" className="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M15.36 1.92a13.44 13.44 0 1 1 0 26.88 13.44 13.44 0 0 1 0 -26.88zm0 24.96a11.52 11.52 0 0 0 0 -23.04 11.52 11.52 0 0 0 0 23.04zm-1.44 -7.428L20.058 15.36 13.92 11.268v8.183zm0.319 -10.28 7.484 4.99a1.44 1.44 0 0 1 0 2.396L14.239 21.548A1.44 1.44 0 0 1 12 20.35V10.368a1.44 1.44 0 0 1 2.239 -1.198z" /></svg>
+                      <span className='ml-2 text-gray-700 font-light'>20 Video</span>
+                    </div>
+                    <div className='flex'>
+                      <svg fill="#000000" width="18px" height="18px" viewBox="-0.045 -0.034 0.54 0.54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" className="jam jam-users"><path d="M0.08 0.249a0.022 0.022 0 1 1 0.016 0.042A0.081 0.081 0 0 0 0.045 0.366V0.405a0.022 0.022 0 0 0 0.022 0.022h0.18a0.022 0.022 0 0 0 0.022 -0.022v-0.037a0.082 0.082 0 0 0 -0.053 -0.077 0.022 0.022 0 1 1 0.016 -0.042A0.127 0.127 0 0 1 0.315 0.368V0.405a0.068 0.068 0 0 1 -0.068 0.068H0.068a0.068 0.068 0 0 1 -0.068 -0.068v-0.039a0.126 0.126 0 0 1 0.08 -0.117zM0.158 0.022a0.09 0.09 0 0 1 0.09 0.09v0.045a0.09 0.09 0 1 1 -0.18 0V0.112a0.09 0.09 0 0 1 0.09 -0.09zm0 0.045a0.045 0.045 0 0 0 -0.045 0.045v0.045a0.045 0.045 0 1 0 0.09 0V0.112a0.045 0.045 0 0 0 -0.045 -0.045zm0.202 0.383a0.022 0.022 0 0 1 0 -0.045h0.022a0.022 0.022 0 0 0 0.022 -0.022v-0.041a0.076 0.076 0 0 0 -0.052 -0.072 0.022 0.022 0 1 1 0.014 -0.043A0.121 0.121 0 0 1 0.45 0.341V0.383a0.068 0.068 0 0 1 -0.068 0.068h-0.022zM0.292 0.045a0.022 0.022 0 0 1 0 -0.045 0.09 0.09 0 0 1 0.09 0.09v0.045a0.09 0.09 0 0 1 -0.09 0.09 0.022 0.022 0 0 1 0 -0.045 0.045 0.045 0 0 0 0.045 -0.045V0.09a0.045 0.045 0 0 0 -0.045 -0.045z" /></svg>
+                      <span className='ml-2 text-gray-700 font-light'>1.930 Siswa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className='bg-white'>
+                <Image src='/assets/images/pexels-lukas-590016 1.svg' width={500} height={200} alt='Ilustration work' />
+                <div>
+                  <h1 className='text-primary text-xl font-semibold mt-3'>Belajar HTML</h1>
+                  <p className='font-light mt-2'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                  </p>
+                  <div className='flex justify-between mt-4'>
+                    <div className='flex'>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      <span className='ml-2 text-gray-700 font-light'>2 Jam</span>
+                    </div>
+                    <div className='flex'>
+                      <svg width="18" height="18" viewBox="0 0 30.72 30.72" className="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M15.36 1.92a13.44 13.44 0 1 1 0 26.88 13.44 13.44 0 0 1 0 -26.88zm0 24.96a11.52 11.52 0 0 0 0 -23.04 11.52 11.52 0 0 0 0 23.04zm-1.44 -7.428L20.058 15.36 13.92 11.268v8.183zm0.319 -10.28 7.484 4.99a1.44 1.44 0 0 1 0 2.396L14.239 21.548A1.44 1.44 0 0 1 12 20.35V10.368a1.44 1.44 0 0 1 2.239 -1.198z" /></svg>
+                      <span className='ml-2 text-gray-700 font-light'>20 Video</span>
+                    </div>
+                    <div className='flex'>
+                      <svg fill="#000000" width="18px" height="18px" viewBox="-0.045 -0.034 0.54 0.54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" className="jam jam-users"><path d="M0.08 0.249a0.022 0.022 0 1 1 0.016 0.042A0.081 0.081 0 0 0 0.045 0.366V0.405a0.022 0.022 0 0 0 0.022 0.022h0.18a0.022 0.022 0 0 0 0.022 -0.022v-0.037a0.082 0.082 0 0 0 -0.053 -0.077 0.022 0.022 0 1 1 0.016 -0.042A0.127 0.127 0 0 1 0.315 0.368V0.405a0.068 0.068 0 0 1 -0.068 0.068H0.068a0.068 0.068 0 0 1 -0.068 -0.068v-0.039a0.126 0.126 0 0 1 0.08 -0.117zM0.158 0.022a0.09 0.09 0 0 1 0.09 0.09v0.045a0.09 0.09 0 1 1 -0.18 0V0.112a0.09 0.09 0 0 1 0.09 -0.09zm0 0.045a0.045 0.045 0 0 0 -0.045 0.045v0.045a0.045 0.045 0 1 0 0.09 0V0.112a0.045 0.045 0 0 0 -0.045 -0.045zm0.202 0.383a0.022 0.022 0 0 1 0 -0.045h0.022a0.022 0.022 0 0 0 0.022 -0.022v-0.041a0.076 0.076 0 0 0 -0.052 -0.072 0.022 0.022 0 1 1 0.014 -0.043A0.121 0.121 0 0 1 0.45 0.341V0.383a0.068 0.068 0 0 1 -0.068 0.068h-0.022zM0.292 0.045a0.022 0.022 0 0 1 0 -0.045 0.09 0.09 0 0 1 0.09 0.09v0.045a0.09 0.09 0 0 1 -0.09 0.09 0.022 0.022 0 0 1 0 -0.045 0.045 0.045 0 0 0 0.045 -0.045V0.09a0.045 0.045 0 0 0 -0.045 -0.045z" /></svg>
+                      <span className='ml-2 text-gray-700 font-light'>1.930 Siswa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        <section className='bg-[#EEF4FA] w-full px-10 mt-40 py-20'>
+          <div className="grid grid-cols-3 gap-14">
+            <div className="col-span-1">
+              <h1 className='text-primary text-4xl font-semibold'>Kata Mereka Tentang Kursus EDUFREE</h1>
+              <p className='text-gray-800 text-lg mt-3'>
+                EDUFREE telah dipercaya lebih dari 10.000 siswa
+              </p>
+            </div>
+            <div className="col-span-2">
+              <h1 className='text-primary text-3xl'>
+                "Materi yang disampaikan mudah dimengerti, kualitas instruktur sangat baik serta  responnya yang cepat. So, kursus disini sangat sangat saya rekomendasikan!!"
+              </h1>
+              <div className="flex mt-10">
+                <div>
+                  <Image src='/assets/images/testimoni.svg' width={52} height={52} alt='testimoni user' />
+                </div>
+                <div className='ml-4'>
+                  <span className='text-primary font-bold'>Ariagne GreenWalsh</span>
+                  <small className='text-primary block font-light'>DevSec Digital Marketing</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='px-10 mt-36 mb-24'>
+          <div className="grid grid-cols-3 gap-10">
+            <div className="col-span-1">
+              <h1 className='text-black text-4xl font-semibold'>Frequently Asked Questions</h1>
+              <p className='text-gray-700 w-5/6 mt-4'>Masih bingung atau ragu? Hubungi kami di nomor  +6288 999 222 333</p>
+            </div>
+            <div className="col-span-2">
+              {/* Question */}
+              <div className="grid grid-cols-12  border-b pb-5">
+                <div className="col-span-1">
+                  <h1 className='text-[#2405F2] text-2xl font-semibold'>01</h1>
+                </div>
+                <div className="col-span-10">
+                  <h1 className='text-2xl'>Apakah kursus ini benar-benar gratis?</h1>
+                  <p className='mt-3 w-5/6'>Kursus yang disediakan bisa diakses gratis untuk menunjang kebutuhan dalam bidang kependidikan.</p>
+                </div>
+              </div>
+              {/* Question */}
+              <div className="grid grid-cols-12 mt-10 border-b pb-5">
+                <div className="col-span-1">
+                  <h1 className='text-[#2405F2] text-2xl font-semibold'>02</h1>
+                </div>
+                <div className="col-span-10">
+                  <h1 className='text-2xl'>Apakah kursus ini benar-benar gratis?</h1>
+                </div>
+              </div>
+              {/* Question */}
+              <div className="grid grid-cols-12 mt-10 border-b pb-5">
+                <div className="col-span-1">
+                  <h1 className='text-[#2405F2] text-2xl font-semibold'>03</h1>
+                </div>
+                <div className="col-span-10">
+                  <h1 className='text-2xl'>Apakah kursus ini benar-benar gratis?</h1>
+                </div>
+              </div>
+              {/* Question */}
+              <div className="grid grid-cols-12 mt-10 border-b pb-5">
+                <div className="col-span-1">
+                  <h1 className='text-[#2405F2] text-2xl font-semibold'>04</h1>
+                </div>
+                <div className="col-span-10">
+                  <h1 className='text-2xl'>Apakah kursus ini benar-benar gratis?</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='px-10 mt-32'>
+          <div className="grid grid-cols-2">
+
+          </div>
+        </section>
+      </main >
     </>
   )
 }
